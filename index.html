@@ -1,0 +1,315 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STA200-Statistics II</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Calibri, sans-serif;
+      display: flex;
+      background-color: #f9f9f9;
+    }
+
+    /* Navigation Panel */
+    .nav-panel {
+      width: 250px;
+      background-color: #591140;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .nav-panel img {
+      width: 100px;
+      height: 100px;
+      border-radius: 40%;
+      display: block;
+      margin: 0 auto 20px;
+      border: 3px solid gold;
+    }
+
+    .nav-panel h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color:  gold;
+    }
+    .nav-panel h2 {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color:  gold;
+    }
+      
+    .nav-panel p {
+      text-align: center;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+   .nav-panel p0 {
+      text-align: left;
+       color: gold;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .nav-panel a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .nav-panel a:hover {
+      color: #1e90ff;
+    }
+
+    /* Content Panel */
+    .content-panel {
+      margin-left: 290px;
+      padding: 20px;
+      color: #333;
+      max-width: 800px;
+    }
+
+    .content-panel h2 {
+      color: #1e90ff;
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #87ceeb;
+      padding-bottom: 10px;
+    }
+
+    .content-panel h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .content-panel h4 {
+      font-size: 18px;
+      margin-bottom: 1.0px;
+      color: #591140;
+    }
+      
+    .content-panel p, .content-panel ul {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .content-panel ul {
+      padding-left: 20px;
+    }
+
+    .content-panel .section {
+      margin-bottom: 40px;
+    }
+
+    .content-panel .section:not(:last-child) {
+      border-bottom: 2px solid #87ceeb;
+      padding-bottom: 20px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .nav-panel {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+      }
+      .nav-panel img {
+        width: 100px;
+        height: 100px;
+      }
+      .content-panel {
+        margin-left: 0;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Panel -->
+  <div class="nav-panel">
+    <img src="portrait.jpg" alt="Your Name">
+    <h2>STA200 STATISTICS II</h2>
+      <center><b>Summer 2025</b></center>
+    <h2>Dr. Cheng Peng</h2>
+    <p0><b>Email</b>: cpeng@wcupa.edu</p0>
+    <br>
+    <p0><b>Office</b>: UNA107</p0>
+    <!--p0>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p0>
+    <p0>GitHub: <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a></p0-->
+      <hr color="gold">
+      
+      <h2>Platforms</h2>
+      
+    <table border = "0" bordercolor = "gold"><tr>
+    <td width = 33% align = "center"><a href="https://d2l.wcupa.edu/d2l/login" target="popup"  onclick="window.open('https://d2l.wcupa.edu/d2l/login', 'name','width=900,height=500')"><font color ="skyblue"><b>D2L</b></font></a>
+        <!--/td>
+    <td width = 33% align = "center"-->
+        <a href="https://ramcloud.wcupa.edu/" target="popup"  onclick="window.open('https://ramcloud.wcupa.edu/', 'name','width=900,height=500')"><font color ="skyblue"><b> RamCloud</b></font></a></td>
+        
+    <td width = 33% align = "center"><a href="https://ramportal.wcupa.edu/" target="popup"  onclick="window.open('https://ramportal.wcupa.edu/', 'name','width=900,height=500')"><font color ="skyblue"><b>Zoom </b></font></a>
+        <!--/td>
+    <td width = 33% align = "center"-->
+        <a href="https://ramportal.wcupa.edu/" target="popup"  onclick="window.open('https://ramportal.wcupa.edu/', 'name','width=900,height=500')"><font color ="skyblue"><b>RamPortal </b></font></a></td>
+     </tr></table> 
+      
+      <hr color="gold">    
+      
+    <h2>Course Materials</h2>
+    <center>
+    <table border = "0.5" bordercolor = "gold">
+    <tr>
+    <td width = 33% align = "center">
+        <a href="#syllabus"><font color ="skyblue"><b>Syllabus</b></font></a>    
+        <a href="#week01"><font color ="skyblue"><b>Week 1</b></font></a>
+        <a href="#week02"><font color ="skyblue"><b>Week 2</b></font></a>
+         </td>
+        
+    <td width = 33% align = "center">
+        <a href="#week03"><font color ="skyblue"><b>Week 3</b></font></a>
+        <a href="#week04"><font color ="skyblue"><b>Week 4</b></font></a>       
+        <a href="#week05"><font color ="skyblue"><b>Week 5</b></font></a>
+        </td>    
+    </tr>
+      </table>
+    </center>
+<!--div class="line-footer"></div>
+<footer id="footer">
+<center>
+    <a href='http://www.freevisitorcounters.com'>&nbsp;</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=bdd86ca03bf3709e4523bf44ac939417956604f4'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/832947/t/5"></script>
+      <br>
+ </center>
+</footer>       
+    <!--div class="footer"-->
+		    <br><center><font size=2 color = "gold"> <b>  Copyright &copy; C. Peng 2019-<script>document.write(new Date().getFullYear());</script>  <br>
+                All Rights Reserved.</b></font></center>
+	        <!--/div-->  
+     
+      
+  </div>
+
+  <!-- Content Panel -->
+  <div class="content-panel">
+    <!-- Professional Summary -->
+      
+    <!-- Skills & Expertise -->
+    <div id="week01" class="section">
+      <h2>Week 1: Computing Software and Review of Introductory Statistics</h2>
+
+      <p>
+          <h4>1. Getting started with R and RStudio</h4>
+            <p><font color ="navy"><b>Lecture Note:</b></font> 
+            |<a href="module00-R-RStudio.html">HTML</a>|<a href="module00-R-RStudio.pdf">PDF</a>|
+        </p>
+      <p>
+             <ul>
+                  <li>Install the current version of R. It is freely available at <a href="https://www.r-project.org/">https://www.r-project.org/</a></li>
+                  <li>Install the free version of RStudio. The downloading site is at <a href="https://posit.co/products/open-source/rstudio/?sid=1">https://posit.co/products/open-source/rstudio/?sid=1</a></li>
+                 <li>Use R as a super graphing calculator</li>
+                 <li>Bult-in R functions for descriptive statistics</li>
+                 <li>Base R packages</li>
+                 <li>Writing simple and re-usable R scripts </li>
+             </ul>
+          <h4>2. Basic statistics review</h4>
+            <p><font color ="navy"><b>Lecture Note:</b></font> 
+            |<a href="module01-StatsReview.html">HTML</a>|<a href="module01-StatsReview.pdf">PDF</a>|
+        </p>
+             <ul>
+               <li>Sampling distributions and Central Limit Theorem (CLT)</li>
+               <li>Confidence intervals of sample means: normal and t distributions</li>
+               <li>Testing hypothesis: logic, steps, p-value</li>
+             </ul> 
+           <h4>3. Least square simple linear regression (SLR): inference and applications</h4>
+            <p><font color ="navy"><b>Lecture Note:</b></font> 
+            |<a href="Module02-RegressionReview.html">HTML</a>|<a href="Module02-RegressionReview.pdf">PDF</a>|
+            </p>        
+        
+             <ul>
+                 <li>Structure, interpretation of coeffcients with an emphasis on the slope parameters</li>
+                 <li>Assumptions and model diagnostics (validation)</li>
+                 <li>R functions for creating various residual diagnostic plots</li>
+                 <li>Clear understanding of R output and know hoe to use the information to</li>
+                   <ul>
+                    <li> perform hypothesis testing on the slope</li>
+                    <li> construct confidence interval of the slope</li>
+                    <li> assess the goodness-of-fit using R<sup>2</sup></li>
+                  </ul>
+             </ul>
+            <h4>4. Weekly Exam #1 </h4>      
+             <p><font color ="navy"><b>Information:</b></font>|<a href="Exam01.pdf">PDF</a>|
+            </p>                
+        
+      </p>
+    </div>  
+      
+    <!-- Projects & Portfolio >
+    <div id="week02" class="section">
+      <h2>Week 2: Relationship Between One Numerical Variable and Two or More Other Variables </h2>
+       <p> 
+  
+          <h4>1. Extention of simple linear regression - MLR structure, assumption, interpretation</h4>
+          <h4>2. First order MLR with two continous predictor variables</h4>
+          <h4>3. MLR with interactions </h4>
+          <h4>4. SLR and MLR with SPSS</h4>
+       </p>
+    </div>
+    
+      
+    <div id="week03" class="section">
+      <h2>Week 3: Relationship between Two Categorical Variables </h2>
+       <p> 
+          
+          <h4>1. Chi-square distribution</h4>
+          <h4>2. General two-way tables structure </h4>
+          <h4>3. &Chi;<sup>2</sup> test for independence</h4>
+          <h4>4. 2-by-2 table and relative risk</h4>
+          <h4>5. 2-by-k table: regression approaches to the relation of two categorical variables</h4>
+       </p>
+    </div>
+
+    <!-- Work Experience >
+    <div id="week04" class="section">
+      <h2>Week 4: Relationship Between One Numerical and One Categorical Variable: Nonparametric Methods</h2>
+      <p>
+      <ul>
+       <h4>1. Concept of asymptolic normality</h4>
+       <h4>2. One sample sign test</h4>
+       <h4>3. Two sample Wilcoxon rank sum test</h4>
+       <h4>4. Paired Wilcoxon signed rank test</h4>
+       <h4>5. </h4>
+       </ul>
+       </p>
+    </div>
+
+    <!-- Education >
+    <div id="week05" class="section">
+      <h2>Week 5: Relationship Between One Numerical and One Categorical Variable: Parametric Methods</h2>
+       <p>
+      <ul>
+       <h4>1. Principles of DOE</h4>
+       <h4>2. One-ANOVA</h4>
+       <h4>3. Randomized block design</h4>
+       <h4>4. two-way ANOVA</h4>
+       <h4>5. Regression approaches to ANOVA</h4>
+       </ul>
+       </p>
+
+    </div-->
+
+
+  </div>
+</body>
+</html>
