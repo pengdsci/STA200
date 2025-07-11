@@ -211,6 +211,132 @@
     <!-- Professional Summary -->
     
       
+       <div id="week03" class="section">
+      <h2>Week 3: Parametric and Nonparametric One- and Two-Sample Tests </h2>
+           <center><font color = "red"><b>Zoom Office Hours</b>: Tuesday/Wednesday/Thursday 1:30 PM - 3:00 PM</font></center>
+        
+       <p> 
+          <h4>1. One-Sample Tests</h4>
+           <p><font color ="navy"><b>Lecture Note:</b></font> 
+                |<a href="module05-OneSampleTest4Location.html" target="popup"  onclick="window.open('module05-OneSampleTest4Location.html', 'name','width=900,height=500')"><font color ="blue">HTML</font></a>|
+                 <a href="module05-OneSampleTest4Location.pdf" target="popup"  onclick="window.open('module05-OneSampleTest4Location.pdf', 'name','width=900,height=500')"><font color ="blue">PDF</font></a>|    
+              </p> 
+           
+              <ul>
+           
+               <li>Data Structure</li> 
+                   <ul>
+                    <li>R dataframe structure: row and column indices</li>
+                    <li>Access the data frame using row and column indices</li>
+                    <li>Selecting columns and rows</li>
+                    <li>Conditional selection: R function <code>which()</code></li>
+                  </ul>
+               <li>One-Sample t-test Revisited</li>
+               <ul>
+                 <li>Basic assumptions</li>
+                   <ul>
+                    <li>Data are independently observed</li>
+                    <li>The population is normally distributed</li>
+                    <li>Population variance is unknown</li>
+                   </ul>
+                 <li>Manual calculation based on descriptive statistics using R commands</li>
+                 <li> Calling the R function <code>t.test()</code> from the base R package <b>stats</b></li>
+                 </ul>
+                  
+                <li>Linear Regression Approach to One-Sample t Test</li>
+                <ul>
+                  <li>Linear regression Assumption review</li>
+                   <ul>
+                    <li>Data are independently observed</li>
+                    <li>The population is normally distributed</li>
+                    <li>Population variance is unknown</li>
+                   </ul>
+                 <li>Regression with only intercept: $y = \beta_0 + \epsilon$</li>
+                   <ul>
+                    <li>General set-up in R: <code>lm(y ~ 1, data = dataset.name)</code></li>
+                    <li>Regression set-up for one-sample t test in R:<code>lm(I(y-mu_0) ~ 1, data = dataset.name)</code></li>
+                    </ul>
+                    
+                    <li>Nonparametric One-Sample Test for <b>Median</b></li>
+                   <ul>
+                      <li>Binomial distribution: R functions<code>pbinom()</code> and <code>qbinom()</code></li>
+                      <li>Test procedure formulation</li>
+                       <li>Exact method: binomial critical value and p-value - built-in function <code>binom.test()</code> and <code>SIGN.test()</code></li>
+                        <li>Normal approximation</li>
+                        
+                    </ul>
+                 </ul>
+                  
+           </ul>
+           
+                 
+           
+           
+           
+          <h4>2. Two-Sample Tests </h4>
+           <p><font color ="navy"><b>Lecture Note:</b></font> 
+                |<a href="module06-TwoSampleTest4Location.html" target="popup"  onclick="window.open('module06-TwoSampleTest4Location.html', 'name','width=900,height=500')"><font color ="blue">HTML</font></a>|
+                <a href="module06-TwoSampleTest4Location.pdf" target="popup"  onclick="window.open('module06-TwoSampleTest4Location.pdf', 'name','width=900,height=500')"><font color ="blue">PDF</font></a>|     </p> 
+            <ul>
+            <li>Two-Sample t Test Revisited</li> 
+                   <ul>
+                    <li>Assumptions: independent samples, normal populations, unknown but equal variances</li>
+                    <li>Manual calculation: pooled variance and test statistic (TS and its distribution, degrees of freedom)</li>
+                    <li>Built-in function: <code>t.test()</code></li>
+                  </ul>
+               <li>Linear Regression Approach to Two-Sample t Test</li>
+                  <ul>
+                  <li>Response variable and group variable must be either in a dataframe or defined separately.</li>
+                  <li>The group variable must be a factor: R function <code>factor(group.variable)</code></li>
+                  <li>Model formula in R: <code>lm(y ~ factor(x), data = dataset.name)</code></li>
+                 <li>Understand the output of the regression model: estimated difference of the two population means, TS, p-value, and degrees of freedom.</li>
+                 </ul>
+                
+                <li>Non-parametric Two-Sample Test: Wilcoxon Signed Rank Test</li>
+                  <ul>
+                  <li>Two-tailed Wilcoxon signed rank test: What is the null hypothesis?</li>
+                  <li>Formulation of the test procedure and basic steps</li>
+                      <ul>
+                        <li> Exact approach: requires tabulation of critical values based on given significance levels</li>
+                        <li> Normal approximation approach</li>
+                      </ul>
+                  <li>Implementation in R: <code>wilcox.test()</code></li>
+                  <li>Understand the output of <code>wilcox.test()</code></li>
+                 </ul>
+                <li>Two-Paired-Sample Tests</li>
+                 <ul>
+                  <li>Paired t-test: assumptions and R function <code>t.test()</code></li>
+                    <li>
+                        Nonparametric two-paired-sample test: <b>Wilcoxon Signed Rank Test</b> - <code>wilcox.test()</code>
+                  </li>
+                 </ul>
+           
+           
+           </ul>
+           
+           
+          <h4>3.Weekly Exam #3 Information</h4>
+           
+             <ul>
+             <li> <b>Open</b>: Friday at noon</li>
+             <li><b>Close</b>: Sunday at midnight</li>
+             <li><b>Guideline</b>: |<a href="Exam03Info.pdf" target="popup"  onclick="window.open('Exam03Info.pdf', 'name','width=900,height=500')"><font color ="blue">PDF</font></a>| </li>
+            </ul>
+           
+            <!--ul>
+               <li><font color ="navy"><b>Information:</b></font>
+               |<a href="Exam01.pdf" target="popup"  onclick="window.open('Exam01.pdf', 'name','width=900,height=500')"><font color ="blue">PDF</font></a>| </li>
+                    
+               <li><font color ="red"><b>Answer Key and Summary of Exam #1:</b></font> |<a href="WeeklyExam/Exam01-key.pdf" target="popup"  onclick="window.open('WeeklyExam/Exam01-key.pdf', 'name','width=900,height=500')"><font color ="blue">PDF</font></a>| </li>
+              </ul-->  
+       </p>
+    </div>   
+      
+      
+      
+      
+      
+      
     <!-- Projects & Portfolio -->
     <div id="week02" class="section">
       <h2>Week 2: Chi-square Tests for Goodness-of-fit and Independence </h2>
@@ -220,8 +346,9 @@
           <h4>1. Chi-square Distribution and Goodness-of-fit Test</h4>
             <p><font color ="navy"><b>Lecture Note:</b></font> 
                 |<a href="module03-Chisq-Goodness-of-fit.html" target="popup"  onclick="window.open('module03-Chisq-Goodness-of-fit.html', 'name','width=900,height=500')"><font color ="blue">HTML</font></a>|
-         <a href="module03-Chisq-Goodness-of-fit.pdf" target="popup"  onclick="window.open('module03-Chisq-Goodness-of-fit.pdf', 'name','width=900,height=500')"><font color ="blue">PDF</font></a>|    
+         <a href="module03-Chisq-Goodness-of-fit.pdf" target="popup"  onclick="window.open('module03-Chisq-Goodness-of-fit.pdf', 'name','width=900,height=500')"><font color ="blue">PDF</font></a>|   
             </p>  
+        
             <ul>
              <li>Chi-square Distribution</li>
                <ul>
@@ -234,6 +361,7 @@
                     <li>percentile: qchisq(p, df, lower.tail = TRUE)</li>
                   </ul>
                </ul>
+                
              <li>Chi-square Goodness-of-fit Test</li>
                 <ul>
                  <li>Setting up Hypothesis</li>
