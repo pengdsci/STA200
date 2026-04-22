@@ -10,6 +10,7 @@
       font-family: Calibri, sans-serif;
       display: flex;
       background-color: #f9f9f9;
+      background-image: url('img/BgImg.jpg');
     }
 
     /* Navigation Panel */
@@ -145,14 +146,13 @@ table {
   margin-left: auto;
   margin-right: auto;
   /* Optional: Ensure table doesn't take up 100% width */
-  width: 50%; 
-}
+  width: 75%; 
+ /* To change only vertical (row) spacing: */
+  border-collapse: separate;
+  border-spacing: -2px; /* 0px horizontal, 1px vertical */
+
+      }
       
-      
-      
-body {
-         background-image: url('img/BgImg.jpg');
-        }  
   </style>
     
     <script type="text/x-mathjax-config">
@@ -177,7 +177,6 @@ body {
     
   <!-- Navigation Panel -->
   <div class="nav-panel">
-      <br><br>
     <img src="portrait.jpg" alt="Gold Ram">
     <h2>STA200 STATISTICS II</h2>
       <center><b>Summer 2026</b></center>
@@ -190,15 +189,12 @@ body {
       
     <h2>Useful Links</h2>
     <table border = "0" bordercolor = "gold"><tr>
-    <td width = 33% align = "left"><a href="https://d2l.wcupa.edu/d2l/login" target="popup"  onclick="window.open('https://d2l.wcupa.edu/d2l/login', 'name','width=900,height=500')"><font color ="skyblue"><b>D2L</b></font></a>
-        </td>
-        <td width = 67% align = "right">
-        <a href="https://pengdsci.github.io/MAT121W5/w00/w00-statstables.pdf" target="popup"  onclick="window.open('https://pengdsci.github.io/MAT121W5/w00/w00-statstables.pdf', 'name','width=900,height=500')"><font color ="skyblue"><b> Stats Tables</b></font></a></td>
-    </tr>    
-        <tr>
+    <td width = 33% align = "center"><a href="https://d2l.wcupa.edu/d2l/login" target="popup"  onclick="window.open('https://d2l.wcupa.edu/d2l/login', 'name','width=900,height=500')"><font color ="skyblue"><b>D2L</b></font></a>
+
+        <a href="https://pengdsci.github.io/MAT121W5/w00/w00-statstables.pdf" target="popup"  onclick="window.open('https://pengdsci.github.io/MAT121W5/w00/w00-statstables.pdf', 'name','width=900,height=500')"><font color ="skyblue"><b> Tables</b></font></a></td>
+
     <td width = 33% align = "left"><a href="https://ramportal.wcupa.edu/" target="popup"  onclick="window.open('https://ramportal.wcupa.edu/', 'name','width=900,height=500')"><font color ="skyblue"><b>Zoom </b></font></a>
-        </td>
-        <td width = 67% align = "right">
+
         <a href="https://pengdsci.github.io/STA200/TI84.html" target="popup"  onclick="window.open('https://pengdsci.github.io/STA200/TI84.html, 'name','width=900,height=500')"><font color ="skyblue"><b>TI-84</b></font></a></td>
      </tr></table> 
       
@@ -212,11 +208,13 @@ body {
         <a href="STA200Summ2026Syllabus.pdf" target="popup"  onclick="window.open('STA200Summ2026Syllabus.pdf', 'name','width=900,height=500')"><font color ="skyblue"><b>Syllabus </b></font></a>
         <!--a href="#syllabus"><font color ="skyblue"><b>Syllabus</b></font></a-->    
         <a href="#week01"><font color ="skyblue"><b>Week 1</b></font></a>
-        <a href="#week02"><font color ="skyblue"><b>Week 2</b></font></a>
-         </td>
-        
+          </td>   
     <td width = 33% align = "right">
+        <a href="#week02"><font color ="skyblue"><b>Week 2</b></font></a>
+       
         <a href="#week03"><font color ="skyblue"><b>Week 3</b></font></a>
+          </td>   
+    <td width = 33% align = "right">
         <a href="#week04"><font color ="skyblue"><b>Week 4</b></font></a>       
         <a href="#week05"><font color ="skyblue"><b>Week 5</b></font></a>
         </td>    
@@ -225,12 +223,11 @@ body {
     </center>
 <!--div class="line-footer"></div-->
 <!--footer id="footer"-->
-<div style="margin-bottom: -2.8em;"></div>
-<br>
+<div style="margin-bottom: -2em;"></div>
       <center>
     <a href='http://www.freevisitorcounters.com'>&nbsp;</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=bdd86ca03bf3709e4523bf44ac939417956604f4'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/832947/t/5"></script>
-          <div style="margin-bottom: -2em;"></div>
+          <div style="margin-bottom: -2.5em;"></div>
 
 		    <br><font size=2 color = "gold"> <b>  Copyright &copy; C. Peng 2019-<script>document.write(new Date().getFullYear());</script>  <br>
                 All Rights Reserved.</b></font></center>
